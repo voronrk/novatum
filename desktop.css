@@ -1,0 +1,63 @@
+@media (min-width:450px) {
+
+html {
+    
+}
+
+body {
+}
+
+.main-wrapper {
+    max-width:844px;
+}
+
+section {
+}
+
+.header, .footer {
+}
+
+.header {
+    flex-direction:row;
+    flex-wrap:nowrap;
+    align-items:center;
+    justify-content:space-between;
+}
+
+@media (max-width:610px) {
+    .header {
+        flex-direction:column;
+    }
+}
+
+.header-logo-text {
+
+}
+
+.footer {
+
+}
+
+.hero {
+    height: 480px;
+}
+
+.s2 {
+    height: 600px;
+}
+
+.s5 {
+    height: 560px;
+}
+
+.s7 {
+    height: 510px;
+}
+
+.h2 {
+}
+
+.h1 {
+
+}
+}

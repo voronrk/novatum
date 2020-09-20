@@ -1,0 +1,202 @@
+html {
+    font-size:17px;
+    background-repeat:no-repeat;
+}
+
+body {
+    /* font-family: 'Open Sans', 'Arial', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    background-color: #ccc;
+    padding:0;
+    line-height:1.4;
+}
+
+a {
+    color: rgb(237,120,0);
+    font-weight:700;
+}
+
+.main-wrapper {
+    margin:0 auto;
+    background-color:#fff;
+}
+
+.text :not(last-child){
+    margin-bottom:1rem;
+}
+
+.header, .footer {
+    background-color: #000;
+    color:white;
+    padding:10px 40px;
+    display:flex;
+}
+
+.header {
+    flex-direction:column;
+    align-items:center;
+}
+
+.header-logo {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    align-items:center;
+    min-width:16.5rem;
+}
+
+.header-logo-text {
+    display:flex;
+    flex-direction:column;
+    padding-left:0.5rem;
+}
+
+.header-logo-title {
+    font-size:1.5rem;
+    font-weight:900;
+}
+
+.header-logo-subtitle {
+    font-size:0.9rem;
+}
+
+.header-phone {
+    display:block;
+    font-size:2rem;
+    font-weight:400;
+    text-decoration:none;
+    color:white;
+    margin-left:1rem;
+}
+
+.footer {
+    font-size:0.7rem;
+    min-height:3.9rem;
+    align-items:center;
+}
+
+section {
+    padding:2rem 2rem;
+    font-size:1rem;
+    background-position: bottom right;
+    display:flex;
+    flex-direction:column;
+}
+
+.hero {
+    background-image: url("/pic/01.jpg");
+    position:relative;
+    height: 480px;
+    color:white;
+    background-position: 100% 100%;
+}
+
+.s2 {
+    background-image: url("/pic/02.jpg");
+    position:relative;
+    height: 600px;
+    color:white;
+}
+
+.s4 {
+    background-color: rgb(242,237,230);
+}
+
+.columns {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.column {
+    width:45%;
+
+}
+
+.s5 {
+    background-image: url("/pic/04.jpg");
+    position:relative;
+    height: 560px;
+    color:white;
+}
+
+.s5 .button {
+    width:18rem;
+    height:2.7rem;
+    margin-top:1rem;
+}
+
+.s7 {
+    background-image: url("/pic/05.jpg");
+    position:relative;
+    height: 510px;
+    color:white;
+    align-items:center;
+    font-size:1.2rem;
+    justify-content:center;
+    padding: 2rem 4rem;
+    text-align:center;
+}
+
+.s7 .button {
+    width:18rem;
+    height:3.2rem;
+    margin-top:2rem;
+}
+
+.h3 {
+    font-size:1rem;
+    font-weight:bold;
+    margin-bottom:1rem;
+}
+
+.h2 {
+    color: rgb(237,120,0);
+    font-size:1.2rem;
+    font-weight:bold;
+    margin-bottom:1.2rem;
+}
+
+.h2 :not(first-child) {
+    margin-top:1.2rem;
+}
+
+.h2-work {
+    font-weight:300;
+    text-transform:uppercase;
+}
+
+.h2-work-select {
+    color: rgb(237,120,0);
+    font-weight:600;
+}
+
+.h1 {
+    color: rgb(237,120,0);
+    font-size:1.5rem;
+    font-weight:bold;
+    text-align:center;
+    margin-bottom:2rem;
+}
+
+.text-center {
+    text-align:center;
+}
+
+.button {
+    color: white;
+    background-color: rgb(237,120,0);
+    padding:0.5rem;
+    font-weight:700;
+    font-size:1.2rem;
+    text-align:center;
+    max-width:21rem;
+    cursor:pointer;
+    align-self:center;
+}
+
+.form-wrapper {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
