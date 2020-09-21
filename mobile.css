@@ -19,10 +19,23 @@ a {
 .main-wrapper {
     margin:0 auto;
     background-color:#fff;
+    min-width:420px;
 }
 
-.text :not(last-child){
+.text {
     margin-bottom:1rem;
+}
+
+.hero > .text {
+    font-size:1.5rem;
+    position:absolute;
+    bottom:30px;
+    right:125px;
+}
+
+.text-accent {
+    color: rgb(237,120,0);
+    font-weight:700;
 }
 
 .header, .footer {
@@ -76,26 +89,65 @@ a {
 }
 
 section {
-    padding:2rem 2rem;
+    padding:0.5rem 2rem;
     font-size:1rem;
     background-position: bottom right;
     display:flex;
     flex-direction:column;
+    padding-bottom:2rem;
 }
 
 .hero {
     background-image: url("/pic/01.jpg");
     position:relative;
-    height: 480px;
+    min-height: 480px;
     color:white;
     background-position: 100% 100%;
+    padding-top: 115px;
+    padding-left: 80px;
 }
 
 .s2 {
     background-image: url("/pic/02.jpg");
     position:relative;
-    height: 600px;
+    min-height: 600px;
     color:white;
+}
+
+.s3 {
+    background-image: url("/pic/03.jpg");
+    background-position:left top;
+    position:relative;
+    background-repeat:no-repeat;
+    min-height:537px;
+    /* padding-left:350px; */
+    padding-left:4rem;
+    padding-top:500px;
+}
+
+.s3 li {
+    background: url("/pic/marker.png") no-repeat left center;
+    /* min-height:59px; */
+    padding: 1rem 0 1rem 60px;
+}
+
+.s3 > .form-wrapper {
+    width:145px;
+    height:160px;
+    position:absolute;
+    left:100px;
+    top:160px;
+}
+
+.s3 > .form-wrapper > .button {
+    padding:0.5rem;
+    font-size:1rem;
+}
+
+.text-remark {
+    font-size:0.7rem;
+    font-style:italic;
+    padding-top:1rem;
 }
 
 .s4 {
@@ -110,38 +162,27 @@ section {
 
 .column {
     width:45%;
-
 }
 
 .s5 {
     background-image: url("/pic/04.jpg");
     position:relative;
-    height: 560px;
+    min-height: 560px;
     color:white;
 }
 
-.s5 .button {
-    width:18rem;
-    height:2.7rem;
-    margin-top:1rem;
-}
+
 
 .s7 {
     background-image: url("/pic/05.jpg");
     position:relative;
-    height: 510px;
+    min-height: 510px;
     color:white;
     align-items:center;
     font-size:1.2rem;
     justify-content:center;
     padding: 2rem 4rem;
     text-align:center;
-}
-
-.s7 .button {
-    width:18rem;
-    height:3.2rem;
-    margin-top:2rem;
 }
 
 .h3 {
@@ -154,14 +195,16 @@ section {
     color: rgb(237,120,0);
     font-size:1.2rem;
     font-weight:bold;
-    margin-bottom:1.2rem;
+    display:block;
+    padding:1.2rem 0;
 }
 
-.h2 :not(first-child) {
-    margin-top:1.2rem;
+.text + .h2{
+    padding-top:0;
 }
 
 .h2-work {
+    padding:1.2rem 0;
     font-weight:300;
     text-transform:uppercase;
 }
@@ -185,18 +228,73 @@ section {
 
 .button {
     color: white;
-    background-color: rgb(237,120,0);
-    padding:0.5rem;
+    background-color:rgb(237,120,0);
+    padding:1rem;
     font-weight:700;
     font-size:1.2rem;
     text-align:center;
-    max-width:21rem;
     cursor:pointer;
+}
+
+.button:active {
+    border-left: 1px #777 solid;
+    border-top: 1px #777 solid;
+    border-right: 1px white solid;
+    border-bottom: 1px white solid;
+}
+
+section > .button {
     align-self:center;
+}
+
+.s5 .button {
+    width:18rem;
+    height:3.2rem;
+    margin-top:1rem;
+}
+
+.s7 .button {
+    width:18rem;
+    height:3.2rem;
+    margin-top:2rem;
+}
+
+.input {
+    border: 3px rgb(237,120,0) solid;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size:1rem;
+    font-style:italic;
+}
+
+.s2 > .form-wrapper > .input {
+    min-width: 15rem;
+}
+
+.input:focus {
+    background-color:rgb(255, 255, 170);
 }
 
 .form-wrapper {
     display:flex;
     flex-direction:column;
+}
+
+.s2 > .form-wrapper {
     align-items:flex-start;
+    max-width:20rem;
+}
+
+.hero > .form-wrapper {
+    width:205px;
+    height:105px;
+    position:absolute;
+    right:195px;
+    bottom:250px;
+}
+
+.hero > .form-wrapper > .button {
+    height: 2.7rem;
+    padding:0.8rem;
+    font-size:1rem;
 }

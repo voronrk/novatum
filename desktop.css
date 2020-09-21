@@ -1,20 +1,7 @@
 @media (min-width:450px) {
 
-html {
-    
-}
-
-body {
-}
-
 .main-wrapper {
     max-width:844px;
-}
-
-section {
-}
-
-.header, .footer {
 }
 
 .header {
@@ -30,34 +17,40 @@ section {
     }
 }
 
-.header-logo-text {
-
-}
-
-.footer {
-
+.hero > .text {
+    position:relative;
+    bottom:0;
+    right:0;
 }
 
 .hero {
-    height: 480px;
+    background-position:right bottom;
 }
 
-.s2 {
-    height: 600px;
+@media (max-width:800px) {
+    .hero {
+        padding-left:2rem;
+    }
 }
 
-.s5 {
-    height: 560px;
+@media (max-width:747px) {
+    .hero > .text {
+        position:absolute;
+        bottom:30px;
+        right:125px;
+    }
 }
 
-.s7 {
-    height: 510px;
+.s3 {
+    padding-left:350px;
+    padding-top: 0;
 }
 
-.h2 {
+@media (max-width:570px) {
+    .s3 {
+        padding-left:4rem;
+        padding-top:500px;
+    }
 }
 
-.h1 {
-
-}
 }
